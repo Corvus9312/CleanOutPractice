@@ -1,0 +1,10 @@
+{
+  "UserName": "眠眠犬",
+  "StartAppName": "PURPLE",
+  "DelaySecond": 1,
+  "StartAppTimeOut": 30,
+  "StartGameTimeOut": 60,
+  "OpenGameDelaySecond": 45,
+  "PurpleLauncherPath": "D:\\Program Files\\NCSOFT\\Purple\\PurpleLauncher.exe",
+  "CloseGame": true
+}
