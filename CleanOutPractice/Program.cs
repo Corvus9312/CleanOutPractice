@@ -21,6 +21,8 @@ internal class Program
         try
         {
             Window? window = GUI.Application.FindWindowByTitle(_config.GameName);
+
+
             if (window is null)
             {
                 window = GUI.Application.FindWindowByTitle(_config.StartAppName);
@@ -55,7 +57,7 @@ internal class Program
             Console.WriteLine($"開啟昊緣");
 
             await Task.Delay((int)(_config.DelaySecond * 1000));
-
+            
             await 掃蕩(window);
         }
         catch (Exception ex)
@@ -70,6 +72,7 @@ internal class Program
         var height = window.Rectangle.Height;
 
         Console.WriteLine("若在省電模式中需喚醒");
+        await MouseClick(window, (int)(0.5 * width), (int)(0.825 * height));
         await MouseClick(window, (int)(0.5 * width), (int)(0.825 * height));
         await MouseClick(window, (int)(0.5 * width), (int)(0.5 * height));
 
